@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(255, 223, 181);
+}
+form{
+    border: 7px solid rgb(0, 0, 95);
+}
+h1, h3{
+    text-align: center;
+    font-family: Lucida Handwriting, cursive;
+    color: rgb(0, 0, 95);
+}
+div{
+    margin-left: 10%;
+    padding: 15px;
+}
+input[type=text], textarea, select{
+    background-color: white;
+}
+input[type=submit]{
+    background-color: rgb(0, 0, 95);
+    color: white;
+    border: 2px solid rgb(0, 0, 35);
+    cursor: pointer;
+    height: 50px;
+    width:200px;
+}
+label{
+    font-weight: bold;
+}
