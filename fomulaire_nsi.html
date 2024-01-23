@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exemple de formulaire</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- Titre du formulaire -->
+        <h2>Hôtel NSI</h2>
+        <p>Formulaire de réservation</p>
+
+        <form name="formulaire" action="https://webia.lip6.fr/~muratetm/diu/Form_data.php" method="post" target="_blank">
+            
+            
+            <!-- Nom, de type ......  -->
+            <div>
+                <label for="Nom">Nom :</label>
+                <input name="Nom" size="50" maxlength="40" type="text">
+            </div>
+            <div>
+                <label for="Prénom">Prénom :</label>
+                <input name="Prénom" size="50" maxlength="40" type="text">
+            </div>
+            <div>
+                <label for="Courriel">Courriel :</label>
+                <input name="Courriel" size="50" maxlength="40" type="text">
+            </div>
+            <!-- Nombre d'adultes et d'enfants, . -->
+            <div>
+                <label for="adultes">Nombre d'adultes :</label>
+                <select name="adultes">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label for="enfants">Nombre d'enfants :</label>
+                <select name="enfants">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <!-- Nuitées, ....................... -->
+            <div>
+                <label for="nuits">Nombre de nuitées :</label>
+                <select name="nuits">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <!-- Petit déjeuner, ............................. -->
+            <div>
+                <label for="dej">Souhaitez-vous le petit déjeuner ?</label><br>
+                <input type="radio" name="dej" value="oui"> Oui<br>
+                <input type="radio" name="dej" value="non"> Non<br>
+            </div>
+            <div>
+                <label for="dej2">Si oui, préfèreriez-vous un petit-déjeuner continental ou américain ?</label><br>
+                <input type="radio" name="dej2" value="cont"> Continental<br>
+                <input type="radio" name="dej2" value="amer"> Américain<br>
+            </div>
+            <!-- Services proposés par l'hôtel  -->
+            <div>
+                Services proposés par l'hôtel:
+            <div>
+                <label for="excursions">Excursions</label>
+                <input type="checkbox" name="excursions">
+            </div>
+            <div>
+                <label for="aerohotel">Transport aéroport-hôtel</label>
+                <input type="checkbox" name="aerohotel">
+            </div>
+            <div>
+                <label for="park">Parking</label>
+                <input type="checkbox" name="park">
+            </div>
+            </div>
+            <!-- ............................................ -->
+            <input value="Valider la réservation" type="submit">
+        </form>
+    </body>
+</html>
